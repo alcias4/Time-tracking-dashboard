@@ -1,0 +1,149 @@
+.cards{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+
+
+.logo{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    z-index: -10;
+}
+
+.logo > img {
+    width: 60px;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    filter: saturate(60%);
+}
+
+.conteInfo{
+    width: 100%;
+    background-color: hsl(235, 46%, 20%);
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    margin-top: -10px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.conteInfo:hover{
+    background-color: hsl(236, 37%, 39%);
+    
+}
+
+.titleHora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.name-cards{
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.name-horas{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.lastH{
+    align-self:flex-end;
+    margin-right: 20px;
+    font-weight: 200;
+    opacity: 0.6;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+
+.points{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 400;
+    top:-60px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.points:hover{
+    opacity: 1;
+}
+
+
+@media (min-width: 500px){
+    .cards{
+        width: 350px;
+    }
+
+  
+}
+
+
+@media (min-width: 650px){
+    .cards{
+        width: 400px;
+    }
+}
+
+@media (min-width: 850px){
+
+    .cards {
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        height: 100%; 
+        justify-content: space-around;
+    }
+    .contenCards{
+        width: 250px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .conteInfo{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .name-cards{
+        margin-left: -30px;
+    }
+
+    .titleHora{
+        align-self: start;
+        margin-top: 20px;
+        width: 80px;
+    }
+
+    .name-horas{
+        font-size: 40px;
+    }
+    .n{
+        padding-right: 130px;
+    }
+    .t{
+        position: absolute;
+        left: 90px;
+    }
+
+    .points{
+        margin-top: -50px;
+    }
+
+}
+
